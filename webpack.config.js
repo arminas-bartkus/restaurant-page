@@ -34,7 +34,7 @@ module: {
 	},
 
 	{
-  	test: /\.(png|svg|jpg|jpeg|gif)$/i,
+  	test: /\.(png|svg|jpg|jpeg|gif|avif|webp)$/i,
   	type: "asset/resource",
 	},
     ],

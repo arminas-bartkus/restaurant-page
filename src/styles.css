@@ -4,22 +4,27 @@ body {
    background-position: 0px -290px;
 
    backdrop-filter: blur(5px);
-   height: 100vh;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
 }
 
 header {
     background-color: blue;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
 }
 
 #content {
-    background-color: darkblue;
+    background-color: lightblue;
     backdrop-filter: opacity(30%);
     display: flex;
     flex-direction: column;
     flex: 1;
     max-width: 50%;
+    min-width: 50%;
 }
