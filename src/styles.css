@@ -1,3 +1,49 @@
+@font-face {
+    font-family: 'playfair_displaybold';
+    src: url('./fonts/playfairdisplay-bold-webfont.woff2') format('woff2'),
+         url('./fonts/playfairdisplay-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'playfair_displaybold_italic';
+    src: url('./fonts/playfairdisplay-bolditalic-webfont.woff2') format('woff2'),
+         url('./fonts/playfairdisplay-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'playfair_displayitalic';
+    src: url('./fonts/playfairdisplay-italic-webfont.woff2') format('woff2'),
+         url('./fonts/playfairdisplay-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('./fonts/playfairdisplay-regular-webfont.woff2') format('woff2'),
+         url('./fonts/playfairdisplay-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 body {
    background: url(./img/backdrop.jpeg);
    background-size: 100%;
@@ -10,14 +56,34 @@ body {
    align-items: center;
    background-repeat: no-repeat;
    background-attachment: fixed;
+   color: white;
+   font-family: 'playfair_displaybold';
+   letter-spacing: 1px;
 }
 
 header {
-    background-color: blue;
     position: sticky;
-    top: 0px;
+    top: 0px;   
     z-index: 1;
+    display: flex;
+    flex: 1;
+    height: 100px;
+
+
+    margin-left: auto;
 }
+
+nav {
+    border: solid green;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
 
 .menuPage {
     background: url(./img/MENU/menu-backdrop.jpg);
@@ -25,11 +91,69 @@ header {
 }
 
 #content {
-    background-color: lightblue;
-    backdrop-filter: opacity(30%);
     display: flex;
     flex-direction: column;
     flex: 1;
-    max-width: 50%;
-    min-width: 50%;
+    background-color: rgba(173, 216, 230, 0.342);
+  
 }
+
+.row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.meetMeImg {
+    width: 600px;
+    align-self: center;
+}
+
+.foodImg {
+    width: 300px;
+}
+
+button {
+   background: none;
+   height: fit-content;
+   border: none;
+   color: white;
+   font: inherit;
+}
+
+h1 {
+    max-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    font-size: 10rem;
+    justify-self: center;
+    margin: 150px 0px 50px 0;
+}
+
+h2 {
+    align-self: center;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    width: 50%;
+  
+}
+
+.charSection {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+h3, p {
+    width: 40ch;
+    margin: 30px;
+    font-size: 2rem;
+    text-align: justify;
+}
+

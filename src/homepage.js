@@ -19,7 +19,14 @@ const carmenImg = document.createElement("img");
 const sydneyImg = document.createElement("img");
 const richieImg = document.createElement("img");
 const tinaImg = document.createElement("img");
-const marcusImg =document.createElement("img");
+const marcusImg = document.createElement("img");
+
+carmenImg.classList.add("meetMeImg");
+sydneyImg.classList.add("meetMeImg");
+richieImg.classList.add("meetMeImg");
+tinaImg.classList.add("meetMeImg");
+marcusImg.classList.add("meetMeImg");
+
 
 const carmenName = document.createElement("h3");
 const sydneyName = document.createElement("h3");
@@ -33,6 +40,55 @@ const richieDesc = document.createElement("p");
 const tinaDesc = document.createElement("p");
 const marcusDesc = document.createElement("p"); 
 
+const carmTextDiv = document.createElement("div");
+const sydTextDiv = document.createElement("div");
+const richieTextDiv = document.createElement("div");
+const tinaTextDiv = document.createElement("div");
+const marcusTextDiv = document.createElement("div");
+
+carmTextDiv.appendChild(carmenName);
+carmTextDiv.appendChild(carmenDesc);
+
+sydTextDiv.appendChild(sydneyName);
+sydTextDiv.appendChild(sydneyDesc);
+
+richieTextDiv.appendChild(richieName);
+richieTextDiv.appendChild(richieDesc);
+
+tinaTextDiv.appendChild(tinaName);
+tinaTextDiv.appendChild(tinaDesc);
+
+marcusTextDiv.appendChild(marcusName);
+marcusTextDiv.appendChild(marcusDesc);
+
+const carmWholeDiv = document.createElement("div");
+const sydWholeDiv = document.createElement("div");
+const richieWholeDiv = document.createElement("div");
+const tinaWholeDiv = document.createElement("div");
+const marcusWholeDiv = document.createElement("div");
+
+carmWholeDiv.appendChild(carmTextDiv);
+carmWholeDiv.appendChild(carmenImg);
+
+sydWholeDiv.appendChild(sydneyImg);
+sydWholeDiv.appendChild(sydTextDiv);
+
+richieWholeDiv.appendChild(richieTextDiv);
+richieWholeDiv.appendChild(richieImg);
+
+tinaWholeDiv.appendChild(tinaImg);
+tinaWholeDiv.appendChild(tinaTextDiv);
+
+marcusWholeDiv.appendChild(marcusTextDiv);
+marcusWholeDiv.appendChild(marcusImg);
+
+carmWholeDiv.classList.add("charSection");
+sydWholeDiv.classList.add("charSection");
+richieWholeDiv.classList.add("charSection");
+tinaWholeDiv.classList.add("charSection");
+marcusWholeDiv.classList.add("charSection");
+
+
 carmenImg.src = importedCarm; 
 sydneyImg.src = importedSyd;
 richieImg.src = importedRichie;
@@ -41,7 +97,7 @@ marcusImg.src = importedMarcus
 
 restaurantName.innerText = "The Bear";
 subHeading.innerText = "We’re a small restaurant in Chicago. We cook good food. We care about the work. That’s it."
-meetTheTeam.innerText = "Meet the Team";
+meetTheTeam.innerText = "Meet the Team Behind the Craft:";
 
 carmenName.innerText = "Carmen, Executive Chef"
 sydneyName.innerText = "Sydney, Chef de Cuisine"
@@ -59,22 +115,12 @@ marcusDesc.innerText = "After honing his pastry skills during an intensive stage
 contentSection.appendChild(restaurantName);
 contentSection.appendChild(subHeading);
 contentSection.appendChild(meetTheTeam);
-contentSection.appendChild(carmenImg);
-contentSection.appendChild(carmenName);
-contentSection.appendChild(carmenDesc);
-contentSection.appendChild(sydneyImg);
-contentSection.appendChild(sydneyName);
-contentSection.appendChild(sydneyDesc);
-contentSection.appendChild(richieImg);
-contentSection.appendChild(richieName);
-contentSection.appendChild(richieDesc);
-contentSection.appendChild(tinaImg);
-contentSection.appendChild(tinaName);
-contentSection.appendChild(tinaDesc);
-contentSection.appendChild(marcusImg);
-contentSection.appendChild(marcusName);
-contentSection.appendChild(marcusDesc);
 
+contentSection.appendChild(carmWholeDiv);
+contentSection.appendChild(sydWholeDiv);
+contentSection.appendChild(richieWholeDiv);
+contentSection.appendChild(tinaWholeDiv);
+contentSection.appendChild(marcusWholeDiv);
 }
 
 export {homepage as loadHomePage}

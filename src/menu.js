@@ -7,8 +7,6 @@ import sweetPotato from "./img/MENU/sweet-potato.jpg"
 
 const loadMenu = function() {
 
-
-    console.log("hi")
 const contentSection = document.querySelector("#content");
 
 const pageBody = document.querySelector("body");
@@ -27,12 +25,24 @@ const sweetPotatoCard = document.createElement("div");
 const firstRowDiv = document.createElement("div");
 const secondRowDiv = document.createElement("div");
 
+firstRowDiv.classList.add("row");
+secondRowDiv.classList.add("row");
+
 const pizzaRollsImg = document.createElement("img");
 const octopusImg = document.createElement("img");
 const nuttyMeatImg = document.createElement("img");
 const steakTartareImg = document.createElement("img");
 const steakImg = document.createElement("img");
 const sweetPotatoImg = document.createElement("img");
+
+
+pizzaRollsImg.classList.add("foodImg");
+octopusImg.classList.add("foodImg");
+nuttyMeatImg.classList.add("foodImg");
+steakTartareImg.classList.add("foodImg");
+steakImg.classList.add("foodImg");
+sweetPotatoImg.classList.add("foodImg");
+
 
 pizzaRollsImg.src = pizzaRolls;
 octopusImg.src = octopus;
@@ -84,8 +94,6 @@ secondRowDiv.appendChild(sweetPotatoCard);
 contentSection.appendChild(menuTitle);
 contentSection.appendChild(firstRowDiv);
 contentSection.appendChild(secondRowDiv);
-
-
 
 }
 
