@@ -15,6 +15,8 @@ const restaurantName = document.createElement("h1");
 const subHeading = document.createElement("h2");
 const meetTheTeam = document.createElement("h2");
 
+meetTheTeam.classList.add("meetTheTeamSubheading")
+
 const carmenImg = document.createElement("img");
 const sydneyImg = document.createElement("img");
 const richieImg = document.createElement("img");
@@ -99,11 +101,11 @@ restaurantName.innerText = "The Bear";
 subHeading.innerText = "We’re a small restaurant in Chicago. We cook good food. We care about the work. That’s it."
 meetTheTeam.innerText = "Meet the Team Behind the Craft:";
 
-carmenName.innerText = "Carmen, Executive Chef"
-sydneyName.innerText = "Sydney, Chef de Cuisine"
-richieName.innerText = "Richie, Front-of-House Manager"
-tinaName.innerText = "Tina, Sous-Chef"
-marcusName.innerText = "Marcus, Pastry Chef"
+carmenName.innerText = "Carmen, \nExecutive Chef"
+sydneyName.innerText = "Sydney, \nChef de Cuisine"
+richieName.innerText = "Richie, \nFront-of-House Manager"
+tinaName.innerText = "Tina, \nSous-Chef"
+marcusName.innerText = "Marcus, \nPastry Chef"
 
 carmenDesc.innerText = "Trained at The French Laundry and Noma, Carmy returned to Chicago after a career in Michelin-starred kitchens to transform his family’s sandwich shop into a fine dining destination. He leads the kitchen with relentless precision and creative intensity.";
 sydneyDesc.innerText = "A rising star with classical training and bold instincts, Syd brings fresh energy and seasonal focus to the menu. Partnered with Carmy, she helps shape The Bear’s evolving culinary identity while managing the day-to-day on the line.";

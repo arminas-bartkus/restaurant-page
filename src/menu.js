@@ -12,15 +12,19 @@ const contentSection = document.querySelector("#content");
 const pageBody = document.querySelector("body");
 pageBody.classList.add("menuPage");
 
-const menuTitle = document.createElement("h2");
-menuTitle.innerText = "Today's Menu"
-
 const pizzaRollsCard = document.createElement("div");
 const octopusCard = document.createElement("div");
 const nuttyMeatCard = document.createElement("div");
 const steakTartareCard = document.createElement("div");
 const steakCard = document.createElement("div");
 const sweetPotatoCard = document.createElement("div");
+
+pizzaRollsCard.classList.add("menuCard");
+octopusCard.classList.add("menuCard");
+nuttyMeatCard.classList.add("menuCard");
+steakTartareCard.classList.add("menuCard");
+steakCard.classList.add("menuCard");
+sweetPotatoCard.classList.add("menuCard");
 
 const firstRowDiv = document.createElement("div");
 const secondRowDiv = document.createElement("div");
@@ -58,7 +62,16 @@ const steakTartareText = document.createElement("p");
 const steakText = document.createElement("p");
 const sweetPotatoText = document.createElement("p");
 
-pizzaRollsText.innerText = "Pizza Rolls \nFine Dining with a Taste of Home"
+
+pizzaRollsText.classList.add("menuParagraph");
+octopusText.classList.add("menuParagraph");
+nuttyMeatText.classList.add("menuParagraph");
+steakTartareText.classList.add("menuParagraph");
+steakText.classList.add("menuParagraph");
+sweetPotatoText.classList.add("menuParagraph");
+
+
+pizzaRollsText.innerText = "Pizza Rolls \nFine Dining with Home's Touch"
 octopusText.innerText = "Octopus\nSalted to the Sea"
 nuttyMeatText.innerText = "Tuna with Nuts\nUnlock a new taste"
 steakTartareText.innerText = "Steak Tartare\nFresh, clean, and to the point"
@@ -91,7 +104,6 @@ secondRowDiv.appendChild(steakTartareCard);
 secondRowDiv.appendChild(steakCard);
 secondRowDiv.appendChild(sweetPotatoCard);
 
-contentSection.appendChild(menuTitle);
 contentSection.appendChild(firstRowDiv);
 contentSection.appendChild(secondRowDiv);
 

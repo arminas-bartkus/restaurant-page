@@ -16,16 +16,28 @@ const contactBtn = document.querySelector(".contactBtn");
 const addListeners = function() {
 
     homeButton.addEventListener("click", function() {
+
+        homeButton.classList.add("underlined");
+        menuButton.classList.remove("underlined");
+        contactBtn.classList.remove("underlined");
         deleteContents();
         loadHomePage();
     });
 
     menuButton.addEventListener("click", function(){
+
+        menuButton.classList.add("underlined");
+        homeButton.classList.remove("underlined");
+        contactBtn.classList.remove("underlined");
         deleteContents();
         loadMenu();
     });
 
     contactBtn.addEventListener("click", function(){
+
+        contactBtn.classList.add("underlined");
+        menuButton.classList.remove("underlined");
+        homeButton.classList.remove("underlined");
         deleteContents();
         loadContactUs();
     });
@@ -37,8 +49,9 @@ const deleteContents = function() {
     };
 };
 
+
 addListeners();
-loadHomePage();
+homeButton.click();
 
 })()
 
