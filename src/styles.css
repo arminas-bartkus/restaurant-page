@@ -2,7 +2,7 @@ body {
    background: url(./img/backdrop.jpeg);
    background-size: 100%;
    background-position: 0px -290px;
-
+   min-height: 100vh;
    backdrop-filter: blur(5px);
    display: flex;
    flex-direction: column;
@@ -17,6 +17,11 @@ header {
     position: sticky;
     top: 0px;
     z-index: 1;
+}
+
+.menuPage {
+    background: url(./img/MENU/menu-backdrop.jpg);
+    background-position: -250px -150px;
 }
 
 #content {

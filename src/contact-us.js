@@ -1,5 +1,8 @@
 const contactUsPage = function () {
 
+const pageBody = document.querySelector("body");
+pageBody.classList.remove("menuPage")
+
 const contentSection = document.querySelector("#content");
 
 const heading = document.createElement("h2");

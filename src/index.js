@@ -3,5 +3,6 @@ import "./reset.css"
 
 import { loadHomePage } from "./homepage"
 import { loadContactUs} from "./contact-us"
+import { loadMenu } from "./menu"
 
-loadContactUs()
+loadMenu()

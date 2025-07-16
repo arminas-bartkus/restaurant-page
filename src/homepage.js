@@ -6,6 +6,9 @@ import importedMarcus from "./img/Marcus.jpg"
 
 const homepage = function() {
 
+const pageBody = document.querySelector("body");
+pageBody.classList.remove("menuPage");
+
 const contentSection = document.querySelector("#content");
 
 const restaurantName = document.createElement("h1");
