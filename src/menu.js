@@ -71,11 +71,11 @@ steakText.classList.add("menuParagraph");
 sweetPotatoText.classList.add("menuParagraph");
 
 
-pizzaRollsText.innerText = "Pizza Rolls \nFine Dining with Home's Touch"
-octopusText.innerText = "Octopus\nSalted to the Sea"
+pizzaRollsText.innerText = "Pizza Rolls \nFine Dining with 'Home's Touch'"
+octopusText.innerText = "Octopus\nSalted to the sea"
 nuttyMeatText.innerText = "Tuna with Nuts\nUnlock a new taste"
 steakTartareText.innerText = "Steak Tartare\nFresh, clean, and to the point"
-steakText.innerText = "Steak\n Served Medium rare"
+steakText.innerText = "Steak\n Served medium-rare"
 sweetPotatoText.innerText = "Sweet Potato with Couscous\nChef Tina's Special"
 
 pizzaRollsCard.appendChild(pizzaRollsImg);

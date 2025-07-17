@@ -99,7 +99,7 @@ marcusImg.src = importedMarcus
 
 restaurantName.innerText = "The Bear";
 subHeading.innerText = "We’re a small restaurant in Chicago. We cook good food. We care about the work. That’s it."
-meetTheTeam.innerText = "Meet the Team Behind the Craft:";
+meetTheTeam.innerText = "Meet the team behind the craft:";
 
 carmenName.innerText = "Carmen, \nExecutive Chef"
 sydneyName.innerText = "Sydney, \nChef de Cuisine"
@@ -108,7 +108,7 @@ tinaName.innerText = "Tina, \nSous-Chef"
 marcusName.innerText = "Marcus, \nPastry Chef"
 
 carmenDesc.innerText = "Trained at The French Laundry and Noma, Carmy returned to Chicago after a career in Michelin-starred kitchens to transform his family’s sandwich shop into a fine dining destination. He leads the kitchen with relentless precision and creative intensity.";
-sydneyDesc.innerText = "A rising star with classical training and bold instincts, Syd brings fresh energy and seasonal focus to the menu. Partnered with Carmy, she helps shape The Bear’s evolving culinary identity while managing the day-to-day on the line.";
+sydneyDesc.innerText = "A rising star with classical training and bold instincts, Syd brings fresh energy and seasonal focus to the menu. Partnered with Carmem, she helps shape The Bear’s evolving culinary identity while managing the day-to-day on the line.";
 richieDesc.innerText = "Once the loudest guy behind the counter, Richie redefined himself through rigorous training at Ever. Now, he runs service with purpose and polish, making every guest feel seen — and every table feel special."
 tinaDesc.innerText = "A longtime cook at The Beef, Tina rose through the ranks and found her stride during training at the Culinary Institute and Ever. She's now a backbone of the kitchen, specializing in handmade pastas and mentoring new cooks."
 marcusDesc.innerText = "After honing his pastry skills during an intensive stage in Copenhagen, Marcus returned to The Bear with a sharper technique and a global perspective. His desserts blend precision and heart, bringing a thoughtful finish to every meal."
